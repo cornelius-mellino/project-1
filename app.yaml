@@ -5,3 +5,49 @@ runtime: php74
 # run a long-running PHP script as a worker process (e.g. "php worker.php").
 #
 # entrypoint: serve index.php
+
+handlers:
+  - url: /assets/css
+    static_dir: assets/css
+    secure: always
+    redirect_http_response_code: 301
+
+  - url: /assets/js
+    static_dir: assets/js
+    secure: always
+    redirect_http_response_code: 301
+
+  - url: /assets/vendor
+    static_dir: assets/vendor
+    secure: always
+    redirect_http_response_code: 301
+
+  # Serve fonts as static resources.
+  - url: /assets/fonts
+    static_dir: assets/fonts
+    secure: always
+    redirect_http_response_code: 301
+
+  # Serve images as static resources.
+  - url: /assets/img/(.+\.(gif|png|jpg))$
+    static_files: assets/img/\1
+    upload: assets/img/.*\.(gif|png|jpg)$
+
+  - url: /assets/img/logo/(.+\.(gif|png|jpg))$
+    static_files: assets/img/logo/\1
+    upload: assets/img/logo/.*\.(gif|png|jpg)$
+
+  # This automatically redirects to the front controller in index.php
+  - url: .*
+    script: auto
+    secure: always
+    redirect_http_response_code: 301
+
+env_variables:
+  # The values here will override those in ".env". This is useful for
+  # production-specific configuration. However, feel free to set these
+  # values in ".env" instead if you prefer.
+  APP_LOG: errorlog
+
+  #GOOGLE_CLOUD_STORAGE_BUCKET: test-project-4-351923.appspot.com
+  #GOOGLE_CLOUD_STORAGE_API_URI: https://storage.googleapis.com/test-project-4-351923.appspot.com/
