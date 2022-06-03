@@ -48,6 +48,6 @@ env_variables:
   # production-specific configuration. However, feel free to set these
   # values in ".env" instead if you prefer.
   APP_LOG: errorlog
-
+  GOOGLE_APPLICATION_CREDENTIALS: my-key.jsons
   #GOOGLE_CLOUD_STORAGE_BUCKET: test-project-4-351923.appspot.com
   #GOOGLE_CLOUD_STORAGE_API_URI: https://storage.googleapis.com/test-project-4-351923.appspot.com/
