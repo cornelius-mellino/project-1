@@ -69,7 +69,7 @@
   </div>
 
 <!--  <div class="vg-page page-home" id="home" style="background-image: url(/assets/img/bg_image_1.jpg)"> -->
-  <div class="vg-page page-home" id="home" style="background-image: url(https://storage.cloud.google.com/test-project-4-351923.appspot.com/img/bg_image_1.jpg?authuser=1)">    
+  <div class="vg-page page-home" id="home" style="background-image: url(https://storage.cloud.google.com/test-project-4-351923.appspot.com/img/bg_image_1.jpg?authuser=1)">
     <!-- Navbar -->
     <div class="navbar navbar-expand-lg navbar-dark sticky" data-offset="500">
       <div class="container">
@@ -108,7 +108,7 @@
       <div class="row">
         <div class="col-lg-4 py-3">
           <div class="img-place wow fadeInUp">
-            <img src="/assets/img/person.jpg" alt="">
+            <img src="https://storage.cloud.google.com/test-project-4-351923.appspot.com/img/person.jpg?authuser=1" alt="">
           </div>
         </div>
         <div>
