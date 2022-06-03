@@ -49,5 +49,6 @@ env_variables:
   # values in ".env" instead if you prefer.
   APP_LOG: errorlog
   GOOGLE_APPLICATION_CREDENTIALS: my-key.jsons
-  #GOOGLE_CLOUD_STORAGE_BUCKET: test-project-4-351923.appspot.com
-  #GOOGLE_CLOUD_STORAGE_API_URI: https://storage.googleapis.com/test-project-4-351923.appspot.com/
+  GOOGLE_CLOUD_PROJECT: test-project-4-351923
+  GOOGLE_CLOUD_STORAGE_BUCKET: test-project-4-351923.appspot.com
+  GOOGLE_CLOUD_STORAGE_API_URI: https://storage.googleapis.com/test-project-4-351923.appspot.com/

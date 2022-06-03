@@ -68,7 +68,8 @@
     </div>
   </div>
 
-  <div class="vg-page page-home" id="home" style="background-image: url(/assets/img/bg_image_1.jpg)">
+<!--  <div class="vg-page page-home" id="home" style="background-image: url(/assets/img/bg_image_1.jpg)"> -->
+  <div class="vg-page page-home" id="home" style="background-image: url(https://storage.cloud.google.com/test-project-4-351923.appspot.com/img/bg_image_1.jpg?authuser=1)">    
     <!-- Navbar -->
     <div class="navbar navbar-expand-lg navbar-dark sticky" data-offset="500">
       <div class="container">
